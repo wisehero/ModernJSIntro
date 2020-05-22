@@ -9,6 +9,7 @@
         var w;
         document.getElementById("open").onclick = function () {
           w = open("newpage.html", "new page", "width=400, height=300");
+          w.document.body.style.backgroundColor = "green";
         };
 
         document.getElementById("close").onclick = function () {
@@ -17,5 +18,10 @@
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <p>
+      <input type="button" value="open" id="open" />
+      <input type="button" value="close" id="close" />
+    </p>
+  </body>
 </html>
